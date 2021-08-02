@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Teanz</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   
+    <link rel="stylesheet" type="text/css" href="normalise.css">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+      <div id="loader" class="center"></div>
+    <main>
+
+       <div class="welcome image-div">
+        <img class="back-img" src="first.png" alt="girl">
+        <div class= "welcome-pg on-text-top">
+  
+            <h2 class="main-text typewriter">Welcome to Teanz</h2>
+            <p class = "anime-class">Share your creative ideas to the world on Teanz...</p>
+
+            <div class="sign-up">
+                <button  type="button" class="btn btn-primary sign-up">Sign Up!</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-lg log-in">Already a member? Log in here</button>
+            </div>
+      
+
+        </div>
+       </div>
+
+       <div class="share image-div">
+        <img class="back-img" src="second.jpeg" alt="light bulbs">
+           <div id= "share-id" class="share-pg on-text-middle">
+            <h2 class = "anime-class">Share your ideas</h2>
+            <p class = "anime-class">There is no limit to creativity<br>
+                Allow your imagination go wild!<br>
+                Drop your sizzlng ideas and already developed plans<br>
+                and watch it move to the next level
+            </p>
+           </div>
+       </div>
+
+       <div class="more-wrapper image-div"> 
+        <img class="back-img more-img" src="third.jpeg">
+         <div class="more on-text-bottom">
+          <div id="last-text" class = "anime-class">You can also get ideas from
+              other members <br>of Teanz to make better your ideas</div>
+              <div class="sign-up">
+                  <button  type="button" class="btn btn-primary sign-up">Sign Up!</button>
+              </div>
+              <div>
+                  <button type="button" class="btn btn-lg log-in">Already a member? Log in here</button>
+              </div>
+         </div>
+       </div>
+
+  </main>
+  <script>
+      document.onloaded= function(){
+    if (document.loaded !== "complete") {
+        document.querySelector("body").style.visibility ="hidden";
+        document.querySelector("#loader").style.visibility = "visible"
+    } else {
+        document.querySelector ("#loader").style.display ="none";
+        document.querySelector("body").style.visibility ="visible";
+    }
+
+};
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,179 @@
+
+body{
+    margin: 0;
+    font-family:sans-serif;
+    overflow-x:hidden;
+}
+h1{
+    font-size: 4rem;
+  } 
+h2{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.6rem;  
+  }
+/* 
+  css animations */
+.typewriter{
+    overflow:hidden;
+
+    white-space:nowrap;
+    margin:0 auto;
+    letter-spacing:0.5rem;
+    animation: typing 3.5s steps(40, end);
+}
+
+/* typing effect */
+@keyframes typing{
+    from {width: 0%}
+    to {width:100%}
+}
+
+.anime-class{
+animation-name:fade-etyn;
+animation-duration:3s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+
+}
+
+@keyframes fade-etyn{
+    0%{
+        color: rgb(187, 206, 19);
+    }
+    100%{
+        color: rgb(49, 216, 16);
+    }
+}
+/* button design */
+.btn-primary{
+    background-color: rgb(128, 21, 39);
+    border: rgb(128, 21, 39);
+}
+
+/* div for the background images */
+.image-div{
+position:relative;
+display:block;
+text-align:center;
+}
+
+/* first div */
+.welcome{
+    position: relative;
+    height:auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* first div's paragraph */
+.welcome-pg{    
+    color: #fff;
+}
+
+/* for each images in the divs */
+.back-img{
+    width: 100%;
+    display: block;
+    filter: brightness(40%);
+}
+
+.on-text-top{
+    text-align:center;
+    display: inline-block;
+    top: 35%;
+    position: absolute;
+    width: 100%;
+    left: 3%;
+}
+
+.on-text-middle{
+    text-align: center;
+    display: inline-block;
+    top: 30%;
+    position:absolute;
+    width:100%;
+    left:3%;
+}
+.on-text-bottom{
+    text-align:center;
+    display:inline-block;
+    top:35%;
+    position:absolute;
+    width:100%;
+    left:3%;
+}
+.share{
+    display:block;
+    position: relative;
+    width: 100%;
+    
+}
+.share-pg{ 
+    color:#26f7fd;
+    text-align: center;
+}
+.share-pg p{
+    font-size: 1.5rem;
+}
+.sign-up{
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+.log-in{
+    color: rgb(128, 21, 39);
+    border: 1px solid rgb(128, 21, 39);
+    border-radius: 50px;
+}
+
+.more-wrapper{
+    color:white;
+    background-color: rgb(128, 21, 39);
+
+}
+.more-img{
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 100px;
+}
+#last-text{
+    font-size : 150%;
+}
+
+/* designs for the loading page */
+#loader {
+    border: 12px solid #f3fef3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 80px;
+    height: 80px;
+    animation: wheel 1s linear infinite;
+}
+
+@keyframes wheel{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* 
+responsive designs */
+@media only screen and (max-width:751px){
+    html{
+    font-size:80%;}
+}
+@media only screen and (max-width:483px){
+    html{
+    font-size:60%;}
+}
+@media only screen and (max-width:369px){
+    html{
+    font-size:45%;}
+}
